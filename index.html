@@ -19,6 +19,9 @@
         font-family: 'Work Sans', sans-serif;
         background: #f2f2f2;
         color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
 
       /* Header */
@@ -78,6 +81,7 @@
         max-width: 1440px;
         margin: 0 auto;
         padding: 60px 120px;
+        flex: 1;
       }
 
       .page-title {
@@ -191,215 +195,6 @@
         color: #555;
       }
 
-      /* Footer */
-       .footer {
-      background: var(--charcoal);
-      width: 1440px;
-      height: 422px;
-      position: absolute;
-      left: 0;
-      top: 2296px;
-    }
-
-    .footer-logo {
-      width: 384px;
-      height: 120px;
-      position: absolute;
-      left: 66px;
-      top: 2344px;
-    }
-
-    .footer-logo-title {
-      color: var(--pure-white);
-      text-align: center;
-      font-family: "NicoMoji-Regular", sans-serif;
-      font-size: 45px;
-      line-height: 52px;
-      font-weight: 400;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .footer-logo-subtitle {
-      color: var(--pure-white);
-      text-align: center;
-      font-family: "SpaceMono-Regular", sans-serif;
-      font-size: 22px;
-      line-height: 52px;
-      font-weight: 400;
-      position: absolute;
-      width: 87.5%;
-      left: 6.25%;
-      bottom: 0;
-      top: 65.83%;
-      height: 34.17%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* Footer Explore Section */
-    .footer-explore {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      width: 205px;
-      position: absolute;
-      left: 633px;
-      top: 2374px;
-    }
-
-    .footer-section-title {
-      color: var(--pure-white);
-      text-align: left;
-      font-family: "SpaceMono-Bold", sans-serif;
-      font-size: 22px;
-      line-height: 52px;
-      font-weight: 700;
-      height: 41px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .footer-link {
-      color: var(--pure-white);
-      text-align: left;
-      font-family: "SpaceMono-Regular", sans-serif;
-      font-size: 22px;
-      line-height: 52px;
-      font-weight: 400;
-      text-decoration: underline;
-      width: 205px;
-      height: 41px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      cursor: pointer;
-      transition: opacity 0.3s;
-    }
-
-    .footer-link:hover,
-    .footer-follow-link:hover {
-      opacity: 0.7;
-    }
-
-    /* Footer Follow Section */
-    .footer-follow {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      width: 167px;
-      position: absolute;
-      left: 865px;
-      top: 2374px;
-    }
-
-    .footer-follow-link {
-      color: var(--pure-white);
-      text-align: left;
-      font-family: "SpaceMono-Regular", sans-serif;
-      font-size: 22px;
-      line-height: 52px;
-      font-weight: 400;
-      text-decoration: underline;
-      width: 167px;
-      height: 41px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      cursor: pointer;
-      transition: opacity 0.3s;
-    }
-
-    /* Footer Email Signup */
-    .footer-signup-title {
-      color: var(--pure-white);
-      text-align: left;
-      font-family: "SpaceMono-Bold", sans-serif;
-      font-size: 22px;
-      line-height: 36px;
-      font-weight: 700;
-      position: absolute;
-      left: 1042px;
-      top: 2390px;
-      width: 310px;
-      height: 46px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .email-container {
-      width: 310px;
-      height: 66px;
-      position: absolute;
-      left: 1042px;
-      top: 2470px;
-    }
-
-    .email-input {
-      background: var(--pure-white);
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border: none;
-      padding: 15px;
-      font-family: "Work Sans", sans-serif;
-      font-size: 22px;
-    }
-
-    .email-input::placeholder {
-      color: var(--light-grey);
-    }
-
-    .footer-signup-button {
-      width: 168px;
-      height: 55px;
-      position: absolute;
-      left: 1042px;
-      top: 2552px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-
-    .footer-signup-button:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-bg-beige {
-      background: var(--warm-beige);
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      transition: background 0.3s;
-    }
-
-    .footer-signup-button:hover .btn-bg-beige {
-      background: #dac9ad;
-    }
-
-    .btn-text-footer {
-      color: var(--charcoal);
-      text-align: center;
-      font-family: "SpaceMono-Regular", sans-serif;
-      font-size: 22px;
-      line-height: 36px;
-      font-weight: 400;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-      /*Asked Claude.ai to help me make a filter button to filter out the categories*/
       /* Filter Buttons */
       .filters {
         display: flex;
@@ -422,6 +217,214 @@
       .filter-btn.active {
         background: #333;
         color: white;
+      }
+
+      /* ======================== FOOTER ======================== */
+      /* Footer Container */
+      .footer-container {
+        background: #333;
+        width: 100%;
+        height: 422px;
+        z-index: 50;
+      }
+
+      .footer-logo {
+        width: 384px;
+        height: 120px;
+        position: absolute;
+        left: 66px;
+        top: 48px;
+      }
+
+      .footer-logo-title {
+        color: white;
+        text-align: center;
+        font-family: 'Space Mono', monospace;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 52px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer-logo-subtitle {
+        color: white;
+        text-align: center;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        line-height: 52px;
+        font-weight: 400;
+        position: absolute;
+        width: 87.5%;
+        left: 6.25%;
+        bottom: 0;
+        top: 65.83%;
+        height: 34.17%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Footer Explore Section */
+      .footer-explore {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 205px;
+        position: absolute;
+        left: 633px;
+        top: 48px;
+      }
+
+      .footer-section-title {
+        color: white;
+        text-align: left;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        line-height: 52px;
+        font-weight: 700;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .footer-link {
+        color: white;
+        text-align: left;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        line-height: 52px;
+        font-weight: 400;
+        text-decoration: underline;
+        width: 205px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        transition: opacity 0.3s;
+      }
+
+      .footer-link:hover,
+      .footer-follow-link:hover {
+        opacity: 0.7;
+      }
+
+      /* Footer Follow Section */
+      .footer-follow {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 167px;
+        position: absolute;
+        left: 865px;
+        top: 48px;
+      }
+
+      .footer-follow-link {
+        color: white;
+        text-align: left;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        line-height: 52px;
+        font-weight: 400;
+        text-decoration: underline;
+        width: 167px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        transition: opacity 0.3s;
+      }
+
+      /* Footer Email Signup */
+      .footer-signup-title {
+        color: white;
+        text-align: left;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 700;
+        position: absolute;
+        left: 1042px;
+        top: 64px;
+        width: 310px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .email-container {
+        width: 310px;
+        height: 66px;
+        position: absolute;
+        left: 1042px;
+        top: 144px;
+      }
+
+      .email-input {
+        background: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border: none;
+        padding: 15px;
+        font-family: "Work Sans", sans-serif;
+        font-size: 22px;
+      }
+
+      .email-input::placeholder {
+        color: #d8d8d8;
+      }
+
+      .footer-signup-button {
+        width: 168px;
+        height: 55px;
+        position: absolute;
+        left: 1042px;
+        top: 226px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        border: none;
+      }
+
+      .footer-signup-button:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-bg-beige {
+        background: #e6dac6;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: background 0.3s;
+      }
+
+      .footer-signup-button:hover .btn-bg-beige {
+        background: #dac9ad;
+      }
+
+      .btn-text-footer {
+        color: #333;
+        text-align: center;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 400;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </head>
@@ -740,66 +743,77 @@
       </div>
     </div>
 
-    <div class="footer"></div>
-    
-    <div class="footer-logo">
-      <a href="https://joycewyfan.github.io/Homepage/" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">
-        <div class="footer-logo-title">The Fan Club</div>
-        <div class="footer-logo-subtitle">Food Edition</div>
-      </a>
-    </div>
+    <!-- Footer Container -->
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="https://joycewyfan.github.io/Homepage/" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">
+          <div class="footer-logo-title">The Fan Club</div>
+          <div class="footer-logo-subtitle">Food Edition</div>
+        </a>
+      </div>
 
-    <div class="footer-explore">
-      <div class="footer-section-title">Explore</div>
-      <a href="https://joycewyfan.github.io/Fan_Joyce_A3_About-Me/" class="footer-link">About</a>
-      <a href="https://joycewyfan.github.io/Fan_Joyce_A3_Food-Review/" class="footer-link">Food Review</a>
-      <a href="https://joycewyfan.github.io/Fan_Joyce_A3_My-Top-Picks/" class="footer-link">My Top Picks</a>
-      <a href="https://joycewyfan.github.io/Fan_Joyce_A3_Contact-/" class="footer-link">Contact</a>
-    </div>
+      <div class="footer-explore">
+        <div class="footer-section-title">Explore</div>
+        <a href="https://joycewyfan.github.io/Fan_Joyce_A3_About-Me/" class="footer-link">About</a>
+        <a href="https://joycewyfan.github.io/Fan_Joyce_A3_Food-Review/" class="footer-link">Food Review</a>
+        <a href="https://joycewyfan.github.io/Fan_Joyce_A3_My-Top-Picks/" class="footer-link">My Top Picks</a>
+        <a href="https://joycewyfan.github.io/Fan_Joyce_A3_Contact-/" class="footer-link">Contact</a>
+      </div>
 
-    <div class="footer-follow">
-      <div class="footer-section-title">Follow Me</div>
-      <a href="https://www.instagram.com/joycee.fann/" target="_blank" class="footer-follow-link">Instagram</a>
-      <a href="https://www.linkedin.com/in/joyce-wy-fan/" target="_blank" class="footer-follow-link">Linkedin</a>
-    </div>
+      <div class="footer-follow">
+        <div class="footer-section-title">Follow Me</div>
+        <a href="https://www.instagram.com/joycee.fann/" target="_blank" class="footer-follow-link">Instagram</a>
+        <a href="https://www.linkedin.com/in/joyce-wy-fan/" target="_blank" class="footer-follow-link">Linkedin</a>
+      </div>
 
-    <div class="footer-signup-title">Updates? News? Sign up with your email.</div>
-    
-    <div class="email-container">
-      <input class="email-input" type="email" placeholder="Email Address">
-    </div>
+      <div class="footer-signup-title">Updates? News? Sign up with your email.</div>
+      
+      <div class="email-container">
+        <input class="email-input" type="email" placeholder="Email Address">
+      </div>
 
-    <button class="footer-signup-button">
-      <div class="btn-bg-beige"></div>
-      <div class="btn-text-footer">Sign Up</div>
-    </button>
+      <button class="footer-signup-button">
+        <div class="btn-bg-beige"></div>
+        <div class="btn-text-footer">Sign Up</div>
+      </button>
+    </div>
 
   <script>
-    // Form submission handling
-    document.querySelector('.send-button').addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      const emailInput = document.querySelector('.email-field-input');
-      const messageInput = document.querySelector('.message-input');
-      
-      if (!emailInput.value || !messageInput.value) {
-        alert('Please fill in all required fields (Email and Message)');
-        return;
-      }
-      
-      if (!emailInput.value.includes('@')) {
-        alert('Please enter a valid email address');
-        return;
-      }
-      
-      // Simulate form submission
-      alert('Thank you for your message! I will get back to you soon.');
-      
-      // Clear form
-      document.querySelector('.first-name-input').value = '';
-      document.querySelector('.last-name-input').value = '';
-      emailInput.value = '';
-      messageInput.value = '';
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const sections = document.querySelectorAll('.section-title, .review-grid');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        btn.classList.add('active');
+
+        const category = btn.dataset.category;
+
+        sections.forEach(section => {
+          if (category === 'all') {
+            section.style.display = section.classList.contains('section-title') ? 'block' : 'grid';
+          } else {
+            if (section.dataset.category === category) {
+              section.style.display = 'grid';
+              // Show the title before this section
+              const title = section.previousElementSibling;
+              if (title && title.classList.contains('section-title')) {
+                title.style.display = 'block';
+              }
+            } else if (section.dataset.category) {
+              section.style.display = 'none';
+              // Hide the title before this section
+              const title = section.previousElementSibling;
+              if (title && title.classList.contains('section-title')) {
+                title.style.display = 'none';
+              }
+            }
+          }
+        });
+      });
     });
 
     // Footer signup handling
@@ -822,57 +836,5 @@
       emailInput.value = '';
     });
   </script>
-
-    <script>
-      // Filter functionality
-      const filterBtns = document.querySelectorAll('.filter-btn');
-      const sections = document.querySelectorAll('.section-title, .review-grid');
-
-      filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          // Remove active class from all buttons
-          filterBtns.forEach(b => b.classList.remove('active'));
-          // Add active class to clicked button
-          btn.classList.add('active');
-
-          const category = btn.dataset.category;
-
-          sections.forEach(section => {
-            if (category === 'all') {
-              section.style.display = section.classList.contains('section-title') ? 'block' : 'grid';
-            } else {
-              if (section.dataset.category === category) {
-                section.style.display = 'grid';
-                // Show the title before this section
-                const title = section.previousElementSibling;
-                if (title && title.classList.contains('section-title')) {
-                  title.style.display = 'block';
-                }
-              } else if (section.dataset.category) {
-                section.style.display = 'none';
-                // Hide the title before this section
-                const title = section.previousElementSibling;
-                if (title && title.classList.contains('section-title')) {
-                  title.style.display = 'none';
-                }
-              }
-            }
-          });
-        });
-      }); 
-      <!--Asked Claude.ai to help me make an inbox for you to write down your email-->
-      // Newsletter form
-      const newsletterBtn = document.querySelector('.newsletter button');
-      const emailInput = document.querySelector('.newsletter input');
-
-      newsletterBtn.addEventListener('click', () => {
-        if (emailInput.value) {
-          alert(`Thanks for signing up with ${emailInput.value}!`);
-          emailInput.value = '';
-        } else {
-          alert('Please enter your email address.');
-        }
-      });
-    </script>
   </body>
 </html>
