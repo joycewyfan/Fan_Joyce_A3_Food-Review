@@ -20,8 +20,6 @@
         background: #f2f2f2;
         color: #333;
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
       }
 
       /* Header */
@@ -81,7 +79,6 @@
         max-width: 1440px;
         margin: 0 auto;
         padding: 60px 120px;
-        flex: 1;
       }
 
       .page-title {
@@ -220,11 +217,12 @@
       }
 
       /* ======================== FOOTER ======================== */
-      /* Footer Container */
+      /* Footer Container - CHANGED: Added position: relative */
       .footer-container {
         background: #333;
         width: 100%;
         height: 422px;
+        position: relative; /* ADDED THIS LINE */
         z-index: 50;
       }
 
@@ -743,7 +741,7 @@
       </div>
     </div>
 
-    <!-- Footer Container -->
+    <!-- Footer Container - Now appears at bottom of content, not fixed -->
     <div class="footer-container">
       <div class="footer-logo">
         <a href="https://joycewyfan.github.io/Homepage/" style="text-decoration: none; color: inherit; display: block; width: 100%; height: 100%;">
